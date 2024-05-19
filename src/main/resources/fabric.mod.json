@@ -1,33 +1,26 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "disc",
 	"version": "${version}",
-	"name": "Example mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Sky Garden Music",
+	"description": "SkyGarden Music in a disc!",
 	"authors": [
-		"Me!"
+		"MerasGD",
+        "SkyGarden - Japanese Trio"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/merasugd/disc",
+		"sources": "https://github.com/merasugd/disc"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
+	"icon": "assets/disc/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
-		],
-		"client": [
-			"com.example.ExampleModClient"
+			"net.merasgd.disc.Disc"
 		]
 	},
 	"mixins": [
-		"modid.mixins.json",
-		{
-			"config": "modid.client.mixins.json",
-			"environment": "client"
-		}
 	],
 	"depends": {
 		"fabricloader": ">=0.15.10",
