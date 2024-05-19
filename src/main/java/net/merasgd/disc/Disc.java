@@ -12,15 +12,6 @@ public class Disc implements ModInitializer {
     @Override
     public void onInitialize() {
         Disc.LOGGER.info("Initializing...");
-
-
-<<<<<<< HEAD
-    }
-
-    public void registerItem(String name) {
-
-=======
->>>>>>> 3235704de0bc39b1163979edec7e4f84b5f344f5
     }
 
     public void registerItem(String name) {
