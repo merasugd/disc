@@ -1,0 +1,18 @@
+{
+"type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+        {
+            "item": "disc:disc_fragment"
+        },
+        {
+            "item": "minecraft:paper"
+        },
+        {
+            "item": "minecraft:dandelion"
+        }
+    ],
+    "result": {
+        "item": "minecraft:music_disc_blocks"
+    }
+}
