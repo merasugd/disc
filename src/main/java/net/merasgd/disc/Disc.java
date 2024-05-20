@@ -4,6 +4,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import net.fabricmc.api.ModInitializer;
+import net.merasgd.disc.items.DiscGroup;
+import net.merasgd.disc.items.ItemsRegistry;
 
 public class Disc implements ModInitializer {
     public static final String MOD_ID = "disc";
@@ -12,10 +14,9 @@ public class Disc implements ModInitializer {
     @Override
     public void onInitialize() {
         LOGGER.info("Initializing...");
-    }
 
-    public void registerItem(String name) {
-
+        ItemsRegistry.registerAllItems();
+        DiscGroup.registerGroup();
     }
     
 }
