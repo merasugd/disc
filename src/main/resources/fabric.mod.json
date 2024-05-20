@@ -18,13 +18,17 @@
 	"entrypoints": {
 		"main": [
 			"net.merasgd.disc.Disc"
+		],
+		"client": [
+			"net.merasgd.disc.Client"
 		]
 	},
 	"mixins": [
+		"disc.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.15.10",
-		"minecraft": "~1.20.6",
+		"minecraft": "~1.20.4",
 		"java": ">=21",
 		"fabric-api": "*"
 	},
