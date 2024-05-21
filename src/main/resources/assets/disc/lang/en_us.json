@@ -1,4 +1,6 @@
 {
     "item.disc.disc_fragment": "Empty Disc",
-    "item.group.disc": "Skygarden"
+    "item.disc.disc_historia": "Historia",
+    "item.disc.disc_historia.desc": "SkyGarden - Historia",
+    "item.group.disc": "Skygarden Disc"
 }

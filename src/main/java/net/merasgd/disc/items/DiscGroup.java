@@ -15,11 +15,12 @@ public class DiscGroup {
     FabricItemGroup.builder().displayName(Text.translatable("item.group.disc")).icon(() -> new ItemStack(ItemsRegistry.DISC_FRAGMENT)).entries((display, entries) -> {
 
         entries.add(ItemsRegistry.DISC_FRAGMENT);
+        entries.add(ItemsRegistry.DISC_HISTORIA);
 
     }).build());
 
     public static void registerGroup() {
         Disc.LOGGER.info("Registering Item Group...");
-        
+
     }
 }

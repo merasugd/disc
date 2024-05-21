@@ -1,0 +1,10 @@
+{
+    "historia_song": {
+        "sounds": [
+            {
+                "name": "disc:historia_song",
+                "stream": true
+            }
+        ]
+    }
+}
