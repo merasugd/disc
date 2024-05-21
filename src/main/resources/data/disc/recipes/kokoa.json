@@ -9,10 +9,10 @@
             "item": "minecraft:paper"
         },
         {
-            "item": "minecraft:dandelion"
+            "item": "minecraft:poppy"
         }
     ],
     "result": {
-        "item": "disc:disc_historia"
+        "item": "disc:disc_kokoa"
     }
 }

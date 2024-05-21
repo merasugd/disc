@@ -1,6 +1,8 @@
 {
     "item.disc.disc_fragment": "Empty Disc",
-    "item.disc.disc_historia": "Historia",
+    "item.disc.disc_historia": "Historia [Music Disc]",
     "item.disc.disc_historia.desc": "SkyGarden - Historia",
+    "item.disc.disc_kokoa": "Kokoa [Music Disc]",
+    "item.disc.disc_kokoa.desc": "SkyGarden - Kokoa",
     "item.group.disc": "Skygarden Disc"
 }

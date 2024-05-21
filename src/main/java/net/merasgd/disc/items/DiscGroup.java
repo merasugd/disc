@@ -16,6 +16,7 @@ public class DiscGroup {
 
         entries.add(ItemsRegistry.DISC_FRAGMENT);
         entries.add(ItemsRegistry.DISC_HISTORIA);
+        entries.add(ItemsRegistry.DISC_KOKOA);
 
     }).build());
 

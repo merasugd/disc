@@ -24,6 +24,7 @@ public class Model extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ItemsRegistry.DISC_FRAGMENT, Models.GENERATED);
         itemModelGenerator.register(ItemsRegistry.DISC_HISTORIA, Models.GENERATED);
+        itemModelGenerator.register(ItemsRegistry.DISC_KOKOA, Models.GENERATED);
     }
 
     

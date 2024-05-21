@@ -20,5 +20,6 @@ public class Tag extends FabricTagProvider.ItemTagProvider {
     @Override
     protected void configure(WrapperLookup arg) {
         getOrCreateTagBuilder(ItemTags.MUSIC_DISCS).add(ItemsRegistry.DISC_HISTORIA);
+        getOrCreateTagBuilder(ItemTags.MUSIC_DISCS).add(ItemsRegistry.DISC_KOKOA);
     }
 }
