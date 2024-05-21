@@ -11,6 +11,7 @@ public class Provider implements DataGeneratorEntrypoint {
         FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 
         pack.addProvider(Model::new);
+        pack.addProvider(Tag::new);
     }
     
 }
