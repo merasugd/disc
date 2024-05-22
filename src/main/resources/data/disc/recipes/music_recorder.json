@@ -2,19 +2,22 @@
     "type": "minecraft:crafting_shaped",
     "category": "misc",
     "pattern": [
-        " I ",
+        "#I#",
         "IPI",
-        " I "
+        "#I#"
     ],
     "key": {
         "I": {
             "item": "minecraft:iron_ingot"
         },
         "P": {
+            "item": "minecraft:noteblock"
+        },
+        "#": {
             "item": "minecraft:paper"
         }
     },
     "result": {
-        "item": "disc:disc_fragment"
+        "item": "disc:music_recorder"
     }
 }

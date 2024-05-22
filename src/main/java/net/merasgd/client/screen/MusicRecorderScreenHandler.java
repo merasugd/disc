@@ -32,9 +32,9 @@ public class MusicRecorderScreenHandler extends ScreenHandler {
         this.propertyDelegate = arrayPropertyDelegate;
         this.blockEntity = ((MusicRecorderEntity) blockEntity);
 
-        this.addSlot(new Slot(this.inventory, 0, 64, 25));
-        this.addSlot(new Slot(this.inventory, 1, 64, 61));
-        this.addSlot(new Slot(this.inventory, 2, 124, 43));
+        this.addSlot(new Slot(this.inventory, 0, 55, 16));
+        this.addSlot(new Slot(this.inventory, 1, 55, 53));
+        this.addSlot(new Slot(this.inventory, 2, 116, 37));
 
         addPlayerInventory(inventory);
         addPlayerHotbar(inventory);

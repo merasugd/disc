@@ -2,17 +2,20 @@ package net.merasgd.disc.entity;
 
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
 import net.merasgd.disc.items.ItemsRegistry;
+import net.merasgd.disc.recipe.MusicRecorderRecipe;
 import net.merasgd.client.screen.MusicRecorderScreenHandler;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventories;
+import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.network.PacketByteBuf;
+import net.minecraft.recipe.RecipeEntry;
 import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.server.network.ServerPlayerEntity;
@@ -20,6 +23,8 @@ import net.minecraft.text.Text;
 import net.minecraft.util.collection.DefaultedList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+
+import java.util.Optional;
 
 public class MusicRecorderEntity extends BlockEntity implements ExtendedScreenHandlerFactory, ImplementedInventory {
 
@@ -31,7 +36,7 @@ public class MusicRecorderEntity extends BlockEntity implements ExtendedScreenHa
 
     protected final PropertyDelegate propertyDelegate;
     private int progress = 0;
-    private int maxProgress = 80;
+    private int maxProgress = 100;
 
     public MusicRecorderEntity(BlockPos pos, BlockState state) {
         super(EntityRegistry.MUSIC_RECORDER_ENTITY_TYPE, pos, state);
@@ -131,10 +136,18 @@ public class MusicRecorderEntity extends BlockEntity implements ExtendedScreenHa
     }
 
     private boolean hasRecipe() {
-        ItemStack result = new ItemStack(ItemsRegistry.DISC_HISTORIA);
-        boolean itis = getStack(MATERIAL).getItem() == Items.PAPER && getStack(INPUT).getItem() == ItemsRegistry.DISC_FRAGMENT;
+        Optional<RecipeEntry<MusicRecorderRecipe>> recipe = getCurrentRecipe();
 
-        return itis && outputSlotAvailableCount(result) && outputSlotAvailable(result.getItem());
+        return recipe.isPresent() && outputSlotAvailableCount(recipe.get().value().getResult(null)) && outputSlotAvailable(recipe.get().value().getResult(null).getItem());
+    }
+
+    private Optional<RecipeEntry<MusicRecorderRecipe>> getCurrentRecipe() {
+        SimpleInventory inv = new SimpleInventory(this.size());
+        for(int i = 0; i < this.size(); i++) {
+            inv.setStack(i, this.getStack(i));
+        }
+
+        return getWorld().getRecipeManager().getFirstMatch(MusicRecorderRecipe.Type.INSTANCE, inv, getWorld());
     }
 
     private boolean outputSlotAvailable(Item item) {
@@ -146,12 +159,12 @@ public class MusicRecorderEntity extends BlockEntity implements ExtendedScreenHa
     }
 
     private void giveItem() {
+        Optional<RecipeEntry<MusicRecorderRecipe>> recipe = getCurrentRecipe();
+
         this.removeStack(INPUT, 1);
         this.removeStack(MATERIAL, 1);
 
-        ItemStack result = new ItemStack(ItemsRegistry.DISC_HISTORIA);
-
-        this.setStack(OUTPUT, new ItemStack(result.getItem(), getStack(OUTPUT).getCount() + result.getCount()));
+        this.setStack(OUTPUT, new ItemStack(recipe.get().value().getResult(null).getItem(), getStack(OUTPUT).getCount() + recipe.get().value().getResult(null).getCount()));
     }
 
     private boolean outputItemCheck() {

@@ -35,14 +35,14 @@ public class MusicRecorderScreen extends HandledScreen<MusicRecorderScreenHandle
         int x = (width - backgroundWidth) / 2;
         int y = (height - backgroundWidth) / 2;
 
-        context.drawTexture(TEXTURE_CONTAINER, x, y + 7, 0, 0, backgroundWidth, backgroundHeight);
+        context.drawTexture(TEXTURE_CONTAINER, x, y + 5, 0, 0, backgroundWidth, backgroundHeight);
 
         renderArrow(context, x, y);
     }
 
     private void renderArrow(DrawContext context, int x, int y) {
         if(handler.isCrafting()) {
-            context.drawTexture(TEXTURE_PROGRESS, x + 80, y + 43, 0, 0, handler.getScale(), 16);
+            context.drawTexture(TEXTURE_PROGRESS, x + 80, y + 40, 0, 0, handler.getScale(), 16);
         }
     }
 
