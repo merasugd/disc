@@ -132,7 +132,7 @@ public class MusicRecorderEntity extends BlockEntity implements ExtendedScreenHa
 
     private boolean hasRecipe() {
         ItemStack result = new ItemStack(ItemsRegistry.DISC_HISTORIA);
-        boolean itis = getStack(INPUT).getItem() == Items.PAPER;
+        boolean itis = getStack(MATERIAL).getItem() == Items.PAPER && getStack(INPUT).getItem() == ItemsRegistry.DISC_FRAGMENT;
 
         return itis && outputSlotAvailableCount(result) && outputSlotAvailable(result.getItem());
     }

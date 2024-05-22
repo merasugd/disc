@@ -5,8 +5,7 @@
 	"name": "Sky Garden Music",
 	"description": "SkyGarden Music in a disc!",
 	"authors": [
-		"MerasGD",
-        "SkyGarden - Japanese Trio"
+		"MerasGD"
 	],
 	"contact": {
 		"homepage": "https://github.com/merasugd/disc",
@@ -28,10 +27,7 @@
 	},
 	"mixins": [
 		"disc.mixins.json",
-		{
-			"config": "disc.client.mixins.json",
-			"environment": "client"
-		}
+		"disc.client.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.15.11",

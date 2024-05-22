@@ -1,8 +1,8 @@
-package net.merasgd.disc;
+package net.merasgd.client;
 
 import net.fabricmc.api.ClientModInitializer;
-import net.merasgd.disc.screen.MusicRecorderScreen;
-import net.merasgd.disc.screen.ScreenHandlers;
+import net.merasgd.client.screen.MusicRecorderScreen;
+import net.merasgd.client.screen.ScreenHandlers;
 import net.minecraft.client.gui.screen.ingame.HandledScreens;
 
 public class Client implements ClientModInitializer {

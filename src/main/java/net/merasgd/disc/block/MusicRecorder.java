@@ -37,10 +37,10 @@ public class MusicRecorder extends BlockWithEntity implements BlockEntityProvide
     }
 
 
-    @Override
+    /*@Override
     public VoxelShape getOutlineShape(BlockState state, BlockView view, BlockPos pos, ShapeContext context) {
         return shape;
-    }
+    }*/
 
     @Override
     public BlockRenderType getRenderType(BlockState state) {

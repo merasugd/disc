@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.merasgd.disc.Disc;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.enums.Instrument;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -14,7 +15,7 @@ import net.minecraft.util.Identifier;
 
 public class BlockRegistry {
 
-    public static final Block MUSIC_RECORDER = registerBlock("music_recorder", new MusicRecorder(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).nonOpaque().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+    public static final Block MUSIC_RECORDER = registerBlock("music_recorder", new MusicRecorder(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).nonOpaque().instrument(Instrument.XYLOPHONE).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

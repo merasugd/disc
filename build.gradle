@@ -19,15 +19,24 @@ repositories {
 }
 
 loom {
-    splitEnvironmentSourceSets()
+    /*splitEnvironmentSourceSets()
 
 	mods {
 		"modid" {
 			sourceSet sourceSets.main
 			sourceSet sourceSets.client
 		}
-	}
+	}*/
+}
 
+sourceSets {
+	main {
+		resources {
+			srcDirs += [
+					'src/main/generated'
+			]
+		}
+	}
 }
 
 dependencies {

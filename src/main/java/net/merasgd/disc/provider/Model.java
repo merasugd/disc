@@ -3,6 +3,7 @@ package net.merasgd.disc.provider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.merasgd.disc.Disc;
+import net.merasgd.disc.block.BlockRegistry;
 import net.merasgd.disc.items.ItemsRegistry;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
@@ -17,7 +18,7 @@ public class Model extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        
+        blockStateModelGenerator.registerSimpleState(BlockRegistry.MUSIC_RECORDER);
     }
 
     @Override

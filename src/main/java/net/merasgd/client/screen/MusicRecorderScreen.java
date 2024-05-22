@@ -12,7 +12,7 @@ import net.minecraft.util.Identifier;
 
 public class MusicRecorderScreen extends HandledScreen<MusicRecorderScreenHandler> {
 
-    private static final Identifier TEXTURE_CONTAINER = new Identifier(Disc.MOD_ID, "textures/gui/music_recorder_container.png");
+    private static final Identifier TEXTURE_CONTAINER = new Identifier(Disc.MOD_ID, "textures/gui/music_recorder.png");
     private static final Identifier TEXTURE_PROGRESS = new Identifier(Disc.MOD_ID, "textures/gui/record_progress.png");
 
     public MusicRecorderScreen(MusicRecorderScreenHandler handler, PlayerInventory inventory, Text title) {
@@ -35,7 +35,7 @@ public class MusicRecorderScreen extends HandledScreen<MusicRecorderScreenHandle
         int x = (width - backgroundWidth) / 2;
         int y = (height - backgroundWidth) / 2;
 
-        context.drawTexture(TEXTURE_CONTAINER, x, y, 0, 0, backgroundWidth, backgroundHeight);
+        context.drawTexture(TEXTURE_CONTAINER, x, y + 7, 0, 0, backgroundWidth, backgroundHeight);
 
         renderArrow(context, x, y);
     }
