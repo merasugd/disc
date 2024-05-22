@@ -4,5 +4,7 @@
     "item.disc.disc_historia.desc": "SkyGarden - Historia",
     "item.disc.disc_kokoa": "Kokoa [Music Disc]",
     "item.disc.disc_kokoa.desc": "SkyGarden - Kokoa",
-    "item.group.disc": "Skygarden Disc"
+    "block.disc.music_recorder": "Music Recorder",
+    "item.group.disc": "Skygarden Disc",
+    "gui.disc.music_recorder": "Music Recorder"
 }

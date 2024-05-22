@@ -11,8 +11,8 @@ import net.minecraft.util.Identifier;
 
 public class ItemsRegistry {
     public static final Item DISC_FRAGMENT = registerItem("disc_fragment", new Item(new FabricItemSettings().maxCount(1)));
-    public static final Item DISC_HISTORIA = registerItem("disc_historia", new MusicDiscItem(7, SoundRegistry.HISTORIA, new FabricItemSettings().maxCount(1), 269));
-    public static final Item DISC_KOKOA = registerItem("disc_kokoa", new MusicDiscItem(10, SoundRegistry.KOKOA, new FabricItemSettings().maxCount(1), 212));
+    public static final Item DISC_HISTORIA = registerItem("disc_historia", new MusicDiscItem(7, SoundRegistry.HISTORIA, new FabricItemSettings().maxCount(1), 268));
+    public static final Item DISC_KOKOA = registerItem("disc_kokoa", new MusicDiscItem(10, SoundRegistry.KOKOA, new FabricItemSettings().maxCount(1), 211));
 
     public static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(Disc.MOD_ID, name), item);

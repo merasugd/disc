@@ -4,8 +4,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import net.fabricmc.api.ModInitializer;
+import net.merasgd.disc.block.BlockRegistry;
+import net.merasgd.disc.entity.EntityRegistry;
 import net.merasgd.disc.items.DiscGroup;
 import net.merasgd.disc.items.ItemsRegistry;
+import net.merasgd.disc.screen.ScreenHandlers;
 import net.merasgd.disc.sound.SoundRegistry;
 
 public class Disc implements ModInitializer {
@@ -16,8 +19,13 @@ public class Disc implements ModInitializer {
     public void onInitialize() {
         LOGGER.info("Initializing...");
 
-        ItemsRegistry.registerAllItems();
         DiscGroup.registerGroup();
+
+        ItemsRegistry.registerAllItems();
+        BlockRegistry.registerBlocks();
+        EntityRegistry.registerEntity();
+        ScreenHandlers.registerScreens();
+        
         SoundRegistry.registerSound();
     }
     

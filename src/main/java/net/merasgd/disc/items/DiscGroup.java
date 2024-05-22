@@ -2,6 +2,7 @@ package net.merasgd.disc.items;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.merasgd.disc.Disc;
+import net.merasgd.disc.block.BlockRegistry;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -17,6 +18,7 @@ public class DiscGroup {
         entries.add(ItemsRegistry.DISC_FRAGMENT);
         entries.add(ItemsRegistry.DISC_HISTORIA);
         entries.add(ItemsRegistry.DISC_KOKOA);
+        entries.add(BlockRegistry.MUSIC_RECORDER);
 
     }).build());
 
