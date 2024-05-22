@@ -20,19 +20,23 @@
 			"net.merasgd.disc.Disc"
 		],
 		"client": [
-			"net.merasgd.disc.Client"
+			"net.merasgd.client.Client"
 		],
 		"fabric-datagen": [
 			"net.merasgd.disc.Provider"
 		]
 	},
 	"mixins": [
-		"disc.mixins.json"
+		"disc.mixins.json",
+		{
+			"config": "disc.client.mixins.json",
+			"environment": "client"
+		}
 	],
 	"depends": {
-		"fabricloader": ">=0.99.0",
-		"minecraft": "~1.20.6",
-		"java": ">=21",
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
 		"fabric-api": "*"
 	},
 	"suggests": {

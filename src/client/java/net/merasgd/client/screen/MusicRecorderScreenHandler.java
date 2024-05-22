@@ -1,4 +1,4 @@
-package net.merasgd.disc.screen;
+package net.merasgd.client.screen;
 
 import net.merasgd.disc.entity.MusicRecorderEntity;
 import net.minecraft.block.entity.BlockEntity;

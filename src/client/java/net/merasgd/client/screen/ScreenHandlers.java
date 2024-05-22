@@ -1,4 +1,4 @@
-package net.merasgd.disc.screen;
+package net.merasgd.client.screen;
 
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerType;
 import net.merasgd.disc.Disc;

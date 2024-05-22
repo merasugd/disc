@@ -1,4 +1,4 @@
-package net.merasgd.disc.screen;
+package net.merasgd.client.screen;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
