@@ -61,12 +61,14 @@ public class MusicRecorderRecipe implements Recipe<SimpleInventory> {
 
     public static class Type implements RecipeType<MusicRecorderRecipe> {
         public static final Type INSTANCE = new Type();
-        public static final String id = "music_recorder";
+        public static final String ID = "music_recorder";
     }
 
     public static class Serializer implements RecipeSerializer<MusicRecorderRecipe> {
         public static final Serializer INSTANCE = new Serializer();
         public static final String ID = "music_recorder";
+
+
 
         public static final Codec<MusicRecorderRecipe> CODEC = RecordCodecBuilder.create(in -> in.group(
                 validateAmount(Ingredient.DISALLOW_EMPTY_CODEC, 9).fieldOf("ingredients").forGetter(MusicRecorderRecipe::getIngredients),

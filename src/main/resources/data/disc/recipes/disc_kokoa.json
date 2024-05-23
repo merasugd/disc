@@ -1,0 +1,16 @@
+{
+    "type": "disc:music_recorder",
+    "category": "misc",
+    "ingredients": [
+        {
+            "item:": "minecraft:poppy"
+        },
+        {
+            "item:": "disc:disc_fragment"
+        }
+    ],
+    "output": {
+        "item": "disc:disc_kokoa",
+        "count": 1
+    }
+}
