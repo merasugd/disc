@@ -3,15 +3,15 @@
     "category": "misc",
     "pattern": [
         "#I#",
-        "IPI",
+        "IlI",
         "#I#"
     ],
     "key": {
         "I": {
             "item": "minecraft:iron_ingot"
         },
-        "P": {
-            "item": "minecraft:noteblock"
+        "l": {
+            "item": "minecraft:note_block"
         },
         "#": {
             "item": "minecraft:paper"

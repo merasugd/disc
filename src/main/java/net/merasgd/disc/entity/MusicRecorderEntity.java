@@ -2,6 +2,7 @@ package net.merasgd.disc.entity;
 
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
 import net.merasgd.disc.recipe.MusicRecorderRecipe;
+import net.merasgd.disc.recipe.RecipeRegistry;
 import net.merasgd.client.screen.MusicRecorderScreenHandler;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
@@ -145,7 +146,7 @@ public class MusicRecorderEntity extends BlockEntity implements ExtendedScreenHa
             inv.setStack(i, this.getStack(i));
         }
 
-        return getWorld().getRecipeManager().getFirstMatch(MusicRecorderRecipe.Type.INSTANCE, inv, getWorld());
+        return getWorld().getRecipeManager().getFirstMatch(RecipeRegistry.MUSIC_RECORDER_TYPE, inv, getWorld());
     }
 
     private boolean outputSlotAvailable(Item item) {

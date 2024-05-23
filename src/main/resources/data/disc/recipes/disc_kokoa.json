@@ -3,10 +3,10 @@
     "category": "misc",
     "ingredients": [
         {
-            "item:": "minecraft:poppy"
+            "item": "minecraft:poppy"
         },
         {
-            "item:": "disc:disc_fragment"
+            "item": "disc:disc_fragment"
         }
     ],
     "output": {

@@ -42,7 +42,7 @@ public class MusicRecorderScreen extends HandledScreen<MusicRecorderScreenHandle
 
     private void renderArrow(DrawContext context, int x, int y) {
         if(handler.isCrafting()) {
-            context.drawTexture(TEXTURE_PROGRESS, x + 80, y + 40, 0, 0, handler.getScale(), 16);
+            context.drawTexture(TEXTURE_PROGRESS, x + 80, y + 36, 0, 0, handler.getScale(), 16);
         }
     }
 
