@@ -10,6 +10,9 @@
     "item.disc.disc_zenzen": "Zenzenzense [Music Disc]",
     "item.disc.disc_zenzen.desc": "RADWIMPS - Zenzenzense",
 
+    "item.disc.disc_suzume": "SUZUME [Music Disc]",
+    "item.disc.disc_suzume.desc": "Nanoka Hara - SUZUME",
+
     "item.disc.lyric_historia": "Lyric File",
     "item.disc.lyric_historia.desc": "Skygarden - Historia",
 
@@ -18,6 +21,9 @@
 
     "item.disc.lyric_zenzen": "Lyric File",
     "item.disc.lyric_zenzen.desc": "RADWIMPS - Zenzenzense",
+
+    "item.disc.lyric_suzume": "Lyric File",
+    "item.disc.lyric_suzume.desc": "Nanoka Hara - SUZUME",
 
     "block.disc.music_recorder": "Music Recorder",
     "gui.disc.music_recorder": "Music Recorder",

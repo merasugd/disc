@@ -1,8 +1,10 @@
-// 1.20.4	2024-05-24T20:15:17.191797	Sky Garden Music/Model Definitions
+// 1.20.4	2024-05-24T21:30:43.012161	Music Disc++/Model Definitions
 d4ca6ca333535560ef29a0348ee04ae21a0d2562 assets\disc\models\item\lyric_historia.json
 a59ffd87411e2b6ad3b910a0c6f1e9f59ea8ed68 assets\disc\models\item\disc_kokoa.json
+b9a03c704052604e451038068abad306418999c6 assets\disc\models\item\disc_suzume.json
 42f7c9d2b02b93c8f442847dfb85a80753247ff8 assets\disc\blockstates\music_recorder.json
 7440ad971e07941ca746e3587a0a0c01385d7f0e assets\disc\models\item\disc_fragment.json
+b67db9f2f1890c34d115133655ab7f5ac9afb74a assets\disc\models\item\lyric_suzume.json
 1327a128e629a0e4c6aca7c2c30ecdccf5c5a6f4 assets\disc\models\item\lyric_kokoa.json
 864f2ffa437c4ad3fc51a69cec1fda2eda8e7b5f assets\disc\models\item\disc_historia.json
 ee7e385259172a7127262e2b27290dc1f1004b82 assets\disc\models\item\disc_zenzen.json

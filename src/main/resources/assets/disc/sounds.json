@@ -23,5 +23,13 @@
             }
         ]
     },
+    "suzume_song": {
+        "sounds": [
+            {
+                "name": "disc:suzume_song",
+                "stream": true
+            }
+        ]
+    },
     "empty": {}
 }

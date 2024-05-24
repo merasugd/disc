@@ -23,9 +23,11 @@ public class Tag extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.MUSIC_DISCS).add(ItemsRegistry.DISC_HISTORIA);
         getOrCreateTagBuilder(ItemTags.MUSIC_DISCS).add(ItemsRegistry.DISC_KOKOA);
         getOrCreateTagBuilder(ItemTags.MUSIC_DISCS).add(ItemsRegistry.DISC_ZENZEN);
+        getOrCreateTagBuilder(ItemTags.MUSIC_DISCS).add(ItemsRegistry.DISC_SUZUME);
 
         getOrCreateTagBuilder(Provider.LyricTags.Items.LYRICS).add(ItemsRegistry.LYRIC_HISTORIA);
         getOrCreateTagBuilder(Provider.LyricTags.Items.LYRICS).add(ItemsRegistry.LYRIC_KOKOA);
         getOrCreateTagBuilder(Provider.LyricTags.Items.LYRICS).add(ItemsRegistry.LYRIC_ZENZEN);
+        getOrCreateTagBuilder(Provider.LyricTags.Items.LYRICS).add(ItemsRegistry.LYRIC_SUZUME);
     }
 }

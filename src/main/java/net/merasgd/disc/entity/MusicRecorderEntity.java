@@ -42,6 +42,8 @@ public class MusicRecorderEntity extends BlockEntity implements ExtendedScreenHa
     private int lyricMaxProgress = 200;
     private int emptyMaxProgress = 50;
 
+    private int typeCraft = 0;
+
     public MusicRecorderEntity(BlockPos pos, BlockState state) {
         super(EntityRegistry.MUSIC_RECORDER_ENTITY_TYPE, pos, state);
 
@@ -52,6 +54,7 @@ public class MusicRecorderEntity extends BlockEntity implements ExtendedScreenHa
                 return switch (var1) {
                     case 0 -> MusicRecorderEntity.this.progress;
                     case 1 -> MusicRecorderEntity.this.maxProgress;
+                    case 2 -> MusicRecorderEntity.this.typeCraft;
                     default -> 0;
                 };
             }
@@ -61,12 +64,13 @@ public class MusicRecorderEntity extends BlockEntity implements ExtendedScreenHa
                 switch (var1) {
                     case 0 -> MusicRecorderEntity.this.progress = var2;
                     case 1 -> MusicRecorderEntity.this.maxProgress = var2;
+                    case 2 -> MusicRecorderEntity.this.typeCraft = var2;
                 };
             }
 
             @Override
             public int size() {
-                return 2;
+                return 3;
             }
             
         };
@@ -145,12 +149,21 @@ public class MusicRecorderEntity extends BlockEntity implements ExtendedScreenHa
         if(result.isIn(Provider.LyricTags.Items.LYRICS)) {
             this.propertyDelegate.set(1, lyricMaxProgress);
             this.maxProgress = lyricMaxProgress;
+
+            this.propertyDelegate.set(2, 1);
+            this.typeCraft = 1;
         } else if(result.getItem() == ItemsRegistry.DISC_FRAGMENT) {
             this.propertyDelegate.set(1, emptyMaxProgress);
             this.maxProgress = emptyMaxProgress;
+
+            this.propertyDelegate.set(2, 2);
+            this.typeCraft = 2;
         } else {
             this.propertyDelegate.set(1, normalMaxProgress);
             this.maxProgress = normalMaxProgress;
+
+            this.propertyDelegate.set(2, 0);
+            this.typeCraft = 0;
         }
     }
 

@@ -1,0 +1,15 @@
+{
+    "type": "disc:music_recorder",
+    "ingredients": [
+        {
+            "item": "minecraft:cornflower"
+        },
+        {
+            "item": "minecraft:paper"
+        }
+    ],
+    "output": {
+        "item": "disc:lyric_suzume",
+        "count": 1
+    }
+}

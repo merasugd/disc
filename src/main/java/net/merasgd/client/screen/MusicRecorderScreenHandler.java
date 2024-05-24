@@ -20,13 +20,13 @@ public class MusicRecorderScreenHandler extends ScreenHandler {
 
     public MusicRecorderScreenHandler(int syncId, PlayerInventory inventory, PacketByteBuf buf) {
         this(syncId, inventory, inventory.player.getWorld().getBlockEntity(buf.readBlockPos()),
-                new ArrayPropertyDelegate(2));
+                new ArrayPropertyDelegate(3));
     }
 
     public MusicRecorderScreenHandler(int syncId, PlayerInventory inventory, BlockEntity blockEntity,
             PropertyDelegate arrayPropertyDelegate) {
         super(ScreenHandlers.MUSIC_RECORDER_SCREEN_HANDLER, syncId);
-        checkSize(((Inventory) blockEntity), 2);
+        checkSize(((Inventory) blockEntity), 3);
         this.inventory = ((Inventory) blockEntity);
         inventory.onOpen(inventory.player);
         this.propertyDelegate = arrayPropertyDelegate;
@@ -34,7 +34,7 @@ public class MusicRecorderScreenHandler extends ScreenHandler {
 
         this.addSlot(new Slot(this.inventory, 0, 56, 17));
         this.addSlot(new Slot(this.inventory, 1, 56, 53));
-        this.addSlot(new RecorderSlot(inventory.player, this.inventory, 2, 115, 35));
+        this.addSlot(new RecorderSlot(inventory.player, this.inventory, 2, 116, 35));
 
         addPlayerInventory(inventory);
         addPlayerHotbar(inventory);
@@ -76,12 +76,16 @@ public class MusicRecorderScreenHandler extends ScreenHandler {
         return propertyDelegate.get(0) > 0;
     }
 
+    public boolean isNormal() {
+        return propertyDelegate.get(2) == 0;
+    }
+
     public boolean isMusic() {
-        return false;
+        return propertyDelegate.get(2) == 1;
     }
 
     public boolean isEmptying() {
-        return false;
+        return propertyDelegate.get(2) == 2;
     }
 
     public int getScale() {

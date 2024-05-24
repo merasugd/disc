@@ -1,0 +1,15 @@
+{
+    "type": "disc:music_recorder",
+    "ingredients": [
+        {
+            "item": "disc:lyric_suzume"
+        },
+        {
+            "item": "disc:disc_fragment"
+        }
+    ],
+    "output": {
+        "item": "disc:disc_suzume",
+        "count": 1
+    }
+}

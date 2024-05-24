@@ -13,7 +13,13 @@ import net.minecraft.util.Identifier;
 public class MusicRecorderScreen extends HandledScreen<MusicRecorderScreenHandler> {
 
     private static final Identifier TEXTURE_CONTAINER = new Identifier(Disc.MOD_ID, "textures/gui/music_recorder.png");
+
+    private static final Identifier TEXTURE_MUSIC_NORMAL = new Identifier(Disc.MOD_ID, "textures/gui/music_recorder_normal.png");
+    private static final Identifier TEXTURE_MUSIC_LYRIC = new Identifier(Disc.MOD_ID, "textures/gui/music_recorder_lyric.png");
+    private static final Identifier TEXTURE_MUSIC_EMPTY = new Identifier(Disc.MOD_ID, "textures/gui/music_recorder_empty.png");
+
     private static final Identifier TEXTURE_PROGRESS = new Identifier(Disc.MOD_ID, "textures/gui/record_progress.png");
+
     public MusicRecorderScreen(MusicRecorderScreenHandler handler, PlayerInventory inventory, Text title) {
         super(handler, inventory, title);
     }
@@ -34,8 +40,7 @@ public class MusicRecorderScreen extends HandledScreen<MusicRecorderScreenHandle
         int x = (width - backgroundWidth) / 2;
         int y = (height - backgroundWidth) / 2;
 
-        context.drawTexture(TEXTURE_CONTAINER, x, y + 5, 0, 0, backgroundWidth, backgroundHeight);
-
+        renderGUI(context, x, y);
         renderArrow(context, x, y);
     }
 
@@ -43,11 +48,17 @@ public class MusicRecorderScreen extends HandledScreen<MusicRecorderScreenHandle
         if(handler.isCrafting()) {
             context.drawTexture(TEXTURE_PROGRESS, x + 80, y + 5, 80, 0, handler.getScale(), 256);
         }
-        if(handler.isMusic()) {
+    }
 
-        }
-        if(handler.isEmptying()) {
-
+    private void renderGUI(DrawContext context, int x, int y) {
+        if(handler.isMusic() && handler.isCrafting()) {
+            context.drawTexture(TEXTURE_MUSIC_LYRIC, x, y + 5, 0, 0, backgroundWidth, backgroundHeight);
+        } else if(handler.isEmptying() && handler.isCrafting()) {
+            context.drawTexture(TEXTURE_MUSIC_EMPTY, x, y + 5, 0, 0, backgroundWidth, backgroundHeight);
+        } else if(handler.isNormal() && handler.isCrafting()) {
+            context.drawTexture(TEXTURE_MUSIC_NORMAL, x, y + 5, 0, 0, backgroundWidth, backgroundHeight);
+        } else {
+            context.drawTexture(TEXTURE_CONTAINER, x, y + 5, 0, 0, backgroundWidth, backgroundHeight);
         }
     }
 
