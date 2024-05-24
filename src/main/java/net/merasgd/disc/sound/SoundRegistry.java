@@ -11,6 +11,7 @@ public class SoundRegistry {
     public static final SoundEvent HISTORIA = registerEvent("historia_song");
     public static final SoundEvent KOKOA = registerEvent("kokoa_song");
     public static final SoundEvent ZENZEN = registerEvent("zenzen_song");
+    public static final SoundEvent EMPTY = registerEvent("empty");
 
     public static SoundEvent registerEvent(String name) {
         Identifier id = new Identifier(Disc.MOD_ID, name);
