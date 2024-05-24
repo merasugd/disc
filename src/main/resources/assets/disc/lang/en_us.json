@@ -7,11 +7,20 @@
     "item.disc.disc_kokoa": "Kokoa [Music Disc]",
     "item.disc.disc_kokoa.desc": "SkyGarden - Kokoa",
 
-    "item.disc.disc_zenzen": "Zenzenzense  [Music Disc]",
-    "item.disc.disc_zenzen.desc": "RADWIMPS - Zenzenzense ",
+    "item.disc.disc_zenzen": "Zenzenzense [Music Disc]",
+    "item.disc.disc_zenzen.desc": "RADWIMPS - Zenzenzense",
+
+    "item.disc.lyric_historia": "Lyric File",
+    "item.disc.lyric_historia.desc": "Skygarden - Historia",
+
+    "item.disc.lyric_kokoa": "Lyric File",
+    "item.disc.lyric_kokoa.desc": "Skygarden - Kokoa",
+
+    "item.disc.lyric_zenzen": "Lyric File",
+    "item.disc.lyric_zenzen.desc": "RADWIMPS - Zenzenzense",
 
     "block.disc.music_recorder": "Music Recorder",
     "gui.disc.music_recorder": "Music Recorder",
 
-    "item.group.disc": "Skygarden Disc"
+    "item.group.disc": "Music Disc++"
 }

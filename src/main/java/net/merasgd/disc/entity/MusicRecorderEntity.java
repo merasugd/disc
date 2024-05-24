@@ -37,6 +37,8 @@ public class MusicRecorderEntity extends BlockEntity implements ExtendedScreenHa
     protected final PropertyDelegate propertyDelegate;
     private int progress = 0;
     private int maxProgress = 100;
+
+    private int normalMaxProgress = 100;
     private int lyricMaxProgress = 200;
     private int emptyMaxProgress = 50;
 
@@ -146,6 +148,9 @@ public class MusicRecorderEntity extends BlockEntity implements ExtendedScreenHa
         } else if(result.getItem() == ItemsRegistry.DISC_FRAGMENT) {
             this.propertyDelegate.set(1, emptyMaxProgress);
             this.maxProgress = emptyMaxProgress;
+        } else {
+            this.propertyDelegate.set(1, normalMaxProgress);
+            this.maxProgress = normalMaxProgress;
         }
     }
 

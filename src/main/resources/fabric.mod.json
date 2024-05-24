@@ -2,8 +2,8 @@
 	"schemaVersion": 1,
 	"id": "disc",
 	"version": "${version}",
-	"name": "Sky Garden Music",
-	"description": "SkyGarden Music in a disc!",
+	"name": "Music Disc++",
+	"description": "Added music disc and a block that makes disc.",
 	"authors": [
 		"MerasGD"
 	],
