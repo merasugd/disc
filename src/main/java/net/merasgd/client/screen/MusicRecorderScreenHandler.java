@@ -32,9 +32,9 @@ public class MusicRecorderScreenHandler extends ScreenHandler {
         this.propertyDelegate = arrayPropertyDelegate;
         this.blockEntity = ((MusicRecorderEntity) blockEntity);
 
-        this.addSlot(new Slot(this.inventory, 0, 56, 16));
+        this.addSlot(new Slot(this.inventory, 0, 56, 17));
         this.addSlot(new Slot(this.inventory, 1, 56, 53));
-        this.addSlot(new Slot(this.inventory, 2, 116, 35));
+        this.addSlot(new RecorderSlot(inventory.player, this.inventory, 2, 115, 35));
 
         addPlayerInventory(inventory);
         addPlayerHotbar(inventory);
@@ -76,6 +76,14 @@ public class MusicRecorderScreenHandler extends ScreenHandler {
         return propertyDelegate.get(0) > 0;
     }
 
+    public boolean isMusic() {
+        return false;
+    }
+
+    public boolean isEmptying() {
+        return false;
+    }
+
     public int getScale() {
         int progress = this.propertyDelegate.get(0);
         int maxProgress = this.propertyDelegate.get(1);  // Max Progress
@@ -98,4 +106,46 @@ public class MusicRecorderScreenHandler extends ScreenHandler {
         }
     }
 
+    public class RecorderSlot extends Slot {
+
+        private final PlayerEntity player;
+        private int amount;
+
+        public RecorderSlot(PlayerEntity entity, Inventory inventory, int index, int x, int y) {
+            super(inventory, index, x, y);
+            this.player = entity;
+        }
+
+        @Override
+        public void onTakeItem(PlayerEntity player, ItemStack stack) {
+            this.onCrafted(stack);
+            super.onTakeItem(player, stack);
+        }
+
+        @Override
+        public ItemStack takeStack(int amount) {
+            if (this.hasStack()) {
+                this.amount += Math.min(amount, this.getStack().getCount());
+            }
+            return super.takeStack(amount);
+        }
+
+        @Override
+        public boolean canInsert(ItemStack stack) {
+            return false;
+        }
+
+        @Override
+        protected void onCrafted(ItemStack stack, int amount) {
+            this.amount += amount;
+            this.onCrafted(stack);
+        }
+
+        @Override
+        protected void onCrafted(ItemStack stack) {
+            stack.onCraftByPlayer(this.player.getWorld(), this.player, this.amount);
+            this.amount = 0;
+        }
+        
+    }
 }

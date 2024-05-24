@@ -14,7 +14,6 @@ public class MusicRecorderScreen extends HandledScreen<MusicRecorderScreenHandle
 
     private static final Identifier TEXTURE_CONTAINER = new Identifier(Disc.MOD_ID, "textures/gui/music_recorder.png");
     private static final Identifier TEXTURE_PROGRESS = new Identifier(Disc.MOD_ID, "textures/gui/record_progress.png");
-
     public MusicRecorderScreen(MusicRecorderScreenHandler handler, PlayerInventory inventory, Text title) {
         super(handler, inventory, title);
     }
@@ -42,7 +41,13 @@ public class MusicRecorderScreen extends HandledScreen<MusicRecorderScreenHandle
 
     private void renderArrow(DrawContext context, int x, int y) {
         if(handler.isCrafting()) {
-            context.drawTexture(TEXTURE_PROGRESS, x + 80, y + 36, 0, 0, handler.getScale(), 16);
+            context.drawTexture(TEXTURE_PROGRESS, x + 80, y + 5, 80, 0, handler.getScale(), 256);
+        }
+        if(handler.isMusic()) {
+
+        }
+        if(handler.isEmptying()) {
+
         }
     }
 

@@ -2,14 +2,14 @@
     "type": "disc:music_recorder",
     "ingredients": [
         {
-            "item": "disc:lyric_kokoa"
+            "item": "disc:lyric_zenzen"
         },
         {
             "item": "disc:disc_fragment"
         }
     ],
     "output": {
-        "item": "disc:disc_kokoa",
+        "item": "disc:disc_zenzen",
         "count": 1
     }
 }

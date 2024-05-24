@@ -2,14 +2,14 @@
     "type": "disc:music_recorder",
     "ingredients": [
         {
-            "item": "disc:lyric_kokoa"
+            "tag": "minecraft:music_discs"
         },
         {
-            "item": "disc:disc_fragment"
+            "item": "minecraft:paper"
         }
     ],
     "output": {
-        "item": "disc:disc_kokoa",
+        "item": "disc:disc_fragment",
         "count": 1
     }
 }

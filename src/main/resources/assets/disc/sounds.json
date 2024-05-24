@@ -14,5 +14,13 @@
                 "stream": true
             }
         ]
+    },
+    "zenzen_song": {
+        "sounds": [
+            {
+                "name": "disc:zenzen_song",
+                "stream": true
+            }
+        ]
     }
 }

@@ -15,10 +15,16 @@ public class DiscGroup {
     public static final ItemGroup Group = Registry.register(Registries.ITEM_GROUP, new Identifier(Disc.MOD_ID, "disc_group"), 
     FabricItemGroup.builder().displayName(Text.translatable("item.group.disc")).icon(() -> new ItemStack(ItemsRegistry.DISC_FRAGMENT)).entries((display, entries) -> {
 
+        entries.add(BlockRegistry.MUSIC_RECORDER);
+
+        entries.add(ItemsRegistry.LYRIC_HISTORIA);
+        entries.add(ItemsRegistry.LYRIC_KOKOA);
+        entries.add(ItemsRegistry.LYRIC_ZENZEN);
+
         entries.add(ItemsRegistry.DISC_FRAGMENT);
         entries.add(ItemsRegistry.DISC_HISTORIA);
         entries.add(ItemsRegistry.DISC_KOKOA);
-        entries.add(BlockRegistry.MUSIC_RECORDER);
+        entries.add(ItemsRegistry.DISC_ZENZEN);
 
     }).build());
 

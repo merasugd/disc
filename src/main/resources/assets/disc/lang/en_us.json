@@ -1,10 +1,17 @@
 {
     "item.disc.disc_fragment": "Empty Disc",
+
     "item.disc.disc_historia": "Historia [Music Disc]",
     "item.disc.disc_historia.desc": "SkyGarden - Historia",
+
     "item.disc.disc_kokoa": "Kokoa [Music Disc]",
     "item.disc.disc_kokoa.desc": "SkyGarden - Kokoa",
+
+    "item.disc.disc_zenzen": "Zenzenzense  [Music Disc]",
+    "item.disc.disc_zenzen.desc": "RADWIMPS - Zenzenzense ",
+
     "block.disc.music_recorder": "Music Recorder",
-    "item.group.disc": "Skygarden Disc",
-    "gui.disc.music_recorder": "Music Recorder"
+    "gui.disc.music_recorder": "Music Recorder",
+
+    "item.group.disc": "Skygarden Disc"
 }

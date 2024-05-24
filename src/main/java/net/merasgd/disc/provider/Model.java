@@ -26,6 +26,10 @@ public class Model extends FabricModelProvider {
         itemModelGenerator.register(ItemsRegistry.DISC_FRAGMENT, Models.GENERATED);
         itemModelGenerator.register(ItemsRegistry.DISC_HISTORIA, Models.GENERATED);
         itemModelGenerator.register(ItemsRegistry.DISC_KOKOA, Models.GENERATED);
+        itemModelGenerator.register(ItemsRegistry.DISC_ZENZEN, Models.GENERATED);
+        itemModelGenerator.register(ItemsRegistry.LYRIC_HISTORIA, Models.GENERATED);
+        itemModelGenerator.register(ItemsRegistry.LYRIC_KOKOA, Models.GENERATED);
+        itemModelGenerator.register(ItemsRegistry.LYRIC_ZENZEN, Models.GENERATED);
     }
 
     

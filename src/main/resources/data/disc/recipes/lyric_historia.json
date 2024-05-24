@@ -2,14 +2,14 @@
     "type": "disc:music_recorder",
     "ingredients": [
         {
-            "item": "disc:lyric_kokoa"
+            "item": "minecraft:blue_orchid"
         },
         {
-            "item": "disc:disc_fragment"
+            "item": "minecraft:paper"
         }
     ],
     "output": {
-        "item": "disc:disc_kokoa",
+        "item": "disc:lyric_historia",
         "count": 1
     }
 }
