@@ -31,5 +31,13 @@
             }
         ]
     },
+    "mariaclara_song": {
+        "sounds": [
+            {
+                "name": "disc:mariaclara_song",
+                "stream": true
+            }
+        ]
+    },
     "empty": {}
 }

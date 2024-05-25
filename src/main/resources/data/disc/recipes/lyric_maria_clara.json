@@ -1,0 +1,15 @@
+{
+    "type": "disc:music_recorder",
+    "ingredients": [
+        {
+            "item": "minecraft:cherry_planks"
+        },
+        {
+            "item": "minecraft:paper"
+        }
+    ],
+    "output": {
+        "item": "disc:lyric_maria_clara",
+        "count": 1
+    }
+}

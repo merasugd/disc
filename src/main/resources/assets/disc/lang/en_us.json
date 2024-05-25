@@ -13,6 +13,9 @@
     "item.disc.disc_suzume": "SUZUME [Music Disc]",
     "item.disc.disc_suzume.desc": "Nanoka Hara - SUZUME",
 
+    "item.disc.disc_maria_clara": "Maria Clara [Music Disc]",
+    "item.disc.disc_maria_clara.desc": "Maria Clara - Janah Rapas x Pjansein",
+
     "item.disc.lyric_historia": "Lyric File",
     "item.disc.lyric_historia.desc": "Skygarden - Historia",
 
@@ -24,6 +27,9 @@
 
     "item.disc.lyric_suzume": "Lyric File",
     "item.disc.lyric_suzume.desc": "Nanoka Hara - SUZUME",
+
+    "item.disc.lyric_maria_clara": "Lyric File",
+    "item.disc.lyric_maria_clara.desc": "Maria Clara - Janah Rapas x Pjansein",
 
     "block.disc.music_recorder": "Music Recorder",
     "gui.disc.music_recorder": "Music Recorder",

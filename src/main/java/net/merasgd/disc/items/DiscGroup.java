@@ -21,12 +21,15 @@ public class DiscGroup {
         entries.add(ItemsRegistry.LYRIC_KOKOA);
         entries.add(ItemsRegistry.LYRIC_ZENZEN);
         entries.add(ItemsRegistry.LYRIC_SUZUME);
+        entries.add(ItemsRegistry.LYRIC_MARIA_CLARA);
 
         entries.add(ItemsRegistry.DISC_FRAGMENT);
+
         entries.add(ItemsRegistry.DISC_HISTORIA);
         entries.add(ItemsRegistry.DISC_KOKOA);
         entries.add(ItemsRegistry.DISC_ZENZEN);
         entries.add(ItemsRegistry.DISC_SUZUME);
+        entries.add(ItemsRegistry.DISC_MARIA_CLARA);
 
     }).build());
 

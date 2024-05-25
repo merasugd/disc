@@ -12,6 +12,7 @@ public class SoundRegistry {
     public static final SoundEvent KOKOA = registerEvent("kokoa_song");
     public static final SoundEvent ZENZEN = registerEvent("zenzen_song");
     public static final SoundEvent SUZUME = registerEvent("suzume_song");
+    public static final SoundEvent MARIA_CLARA = registerEvent("mariaclara_song");
 
     public static final SoundEvent EMPTY = registerEvent("empty");
 

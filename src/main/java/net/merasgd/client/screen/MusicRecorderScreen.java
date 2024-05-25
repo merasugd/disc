@@ -7,6 +7,7 @@ import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.ingame.HandledScreen;
 import net.minecraft.client.render.GameRenderer;
 import net.minecraft.entity.player.PlayerInventory;
+import net.minecraft.text.StringVisitable;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
@@ -27,8 +28,8 @@ public class MusicRecorderScreen extends HandledScreen<MusicRecorderScreenHandle
     @Override
     protected void init() {
         super.init();
-        titleY = 1000;
-        playerInventoryTitleY = 1000;
+        
+        this.titleX = (this.backgroundWidth - this.textRenderer.getWidth((StringVisitable)this.title)) / 2;
     }
 
     @Override

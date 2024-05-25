@@ -1,12 +1,14 @@
-// 1.20.4	2024-05-24T21:30:43.012161	Music Disc++/Model Definitions
-d4ca6ca333535560ef29a0348ee04ae21a0d2562 assets\disc\models\item\lyric_historia.json
+// 1.20.4	2024-05-25T14:55:12.6817753	Music Disc++/Model Definitions
 a59ffd87411e2b6ad3b910a0c6f1e9f59ea8ed68 assets\disc\models\item\disc_kokoa.json
+ee7e385259172a7127262e2b27290dc1f1004b82 assets\disc\models\item\disc_zenzen.json
+4544a996243a74c6b70678e366056b5537cbc1e6 assets\disc\models\item\lyric_zenzen.json
+d4ca6ca333535560ef29a0348ee04ae21a0d2562 assets\disc\models\item\lyric_historia.json
 b9a03c704052604e451038068abad306418999c6 assets\disc\models\item\disc_suzume.json
-42f7c9d2b02b93c8f442847dfb85a80753247ff8 assets\disc\blockstates\music_recorder.json
+5f396ef008d435d450c9dce30fc20d6171857e36 assets\disc\models\item\disc_maria_clara.json
 7440ad971e07941ca746e3587a0a0c01385d7f0e assets\disc\models\item\disc_fragment.json
+42f7c9d2b02b93c8f442847dfb85a80753247ff8 assets\disc\blockstates\music_recorder.json
 b67db9f2f1890c34d115133655ab7f5ac9afb74a assets\disc\models\item\lyric_suzume.json
 1327a128e629a0e4c6aca7c2c30ecdccf5c5a6f4 assets\disc\models\item\lyric_kokoa.json
 864f2ffa437c4ad3fc51a69cec1fda2eda8e7b5f assets\disc\models\item\disc_historia.json
-ee7e385259172a7127262e2b27290dc1f1004b82 assets\disc\models\item\disc_zenzen.json
-4544a996243a74c6b70678e366056b5537cbc1e6 assets\disc\models\item\lyric_zenzen.json
+99febe3bd3591ce59758d2cca727275ffb0a1274 assets\disc\models\item\lyric_maria_clara.json
 2e1b72c4428f20b69ec6d2bb2bfa28e9e8d9c043 assets\disc\models\item\music_recorder.json

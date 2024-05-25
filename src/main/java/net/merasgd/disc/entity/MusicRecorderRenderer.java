@@ -21,12 +21,11 @@ public class MusicRecorderRenderer implements BlockEntityRenderer<MusicRecorderE
     }
 
     @Override
-    public void render(MusicRecorderEntity entity, float tickDelta, MatrixStack matrices,
-                       VertexConsumerProvider vertexConsumers, int light, int overlay) {
+    public void render(MusicRecorderEntity entity, float tickDelta, MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, int overlay) {
         ItemRenderer itemRenderer = MinecraftClient.getInstance().getItemRenderer();
         ItemStack stack = entity.getRenderItem();
         matrices.push();
-        matrices.translate(0.5f, 0.75f, 0.5f);
+        matrices.translate(0.5f, 1f, 0.5f);
         matrices.scale(0.45f, 0.45f, 0.45f);
         matrices.multiply(RotationAxis.POSITIVE_X.rotationDegrees(270));
 

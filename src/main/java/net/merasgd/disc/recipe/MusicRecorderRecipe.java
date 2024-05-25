@@ -6,6 +6,7 @@ import com.mojang.serialization.Codec;
 import com.mojang.serialization.DataResult;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 
+import net.merasgd.disc.block.BlockRegistry;
 import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.network.PacketByteBuf;
@@ -47,6 +48,11 @@ public class MusicRecorderRecipe implements Recipe<SimpleInventory> {
         DefaultedList<Ingredient> list = DefaultedList.ofSize(this.recipeItems.size());
         list.addAll(recipeItems);
         return list;
+    }
+
+    @Override
+    public ItemStack createIcon() {
+        return new ItemStack(BlockRegistry.MUSIC_RECORDER);
     }
 
     @Override

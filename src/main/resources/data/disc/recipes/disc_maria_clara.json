@@ -1,0 +1,15 @@
+{
+    "type": "disc:music_recorder",
+    "ingredients": [
+        {
+            "item": "disc:lyric_maria_clara"
+        },
+        {
+            "item": "disc:disc_fragment"
+        }
+    ],
+    "output": {
+        "item": "disc:disc_maria_clara",
+        "count": 1
+    }
+}
