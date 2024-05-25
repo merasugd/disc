@@ -11,7 +11,7 @@
 		"homepage": "https://github.com/merasugd/disc",
 		"sources": "https://github.com/merasugd/disc"
 	},
-	"license": "MIT",
+	"license": "CC BY-SA 4.0",
 	"icon": "assets/disc/icon.png",
 	"environment": "*",
 	"entrypoints": {
