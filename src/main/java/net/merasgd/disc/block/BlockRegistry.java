@@ -1,6 +1,5 @@
 package net.merasgd.disc.block;
 
-import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.merasgd.disc.Disc;
 import net.minecraft.block.Block;
@@ -23,7 +22,7 @@ public class BlockRegistry {
     }
     
     private static Item registerBlockItem(String name, Block block) {
-        return Registry.register(Registries.ITEM, new Identifier(Disc.MOD_ID, name), new BlockItem(block, new FabricItemSettings()));
+        return Registry.register(Registries.ITEM, new Identifier(Disc.MOD_ID, name), new BlockItem(block, new Item.Settings()));
     }
 
     public static void registerBlocks() {
