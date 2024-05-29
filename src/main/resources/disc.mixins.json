@@ -1,7 +1,7 @@
 {
 	"required": true,
-	"package": "net.merasgd.disc.mixin",
-	"compatibilityLevel": "JAVA_17",
+	"package": "net.merasgd.mixins.mod",
+	"compatibilityLevel": "JAVA_21",
 	"mixins": [
 		"Mixiny"
 	],

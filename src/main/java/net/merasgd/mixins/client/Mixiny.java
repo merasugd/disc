@@ -1,4 +1,4 @@
-package net.merasgd.client.mixin.client;
+package net.merasgd.mixins.client;
 
 import net.minecraft.client.MinecraftClient;
 import org.spongepowered.asm.mixin.Mixin;

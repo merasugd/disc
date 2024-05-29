@@ -1,8 +1,9 @@
-package net.merasgd.disc;
+package net.merasgd.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
-import net.merasgd.disc.provider.*;
+import net.merasgd.datagen.provider.*;
+import net.merasgd.disc.Disc;
 import net.minecraft.item.Item;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.tag.TagKey;

@@ -22,7 +22,7 @@
 			"net.merasgd.client.Client"
 		],
 		"fabric-datagen": [
-			"net.merasgd.disc.Provider"
+			"net.merasgd.datagen.Provider"
 		]
 	},
 	"mixins": [

@@ -1,9 +1,9 @@
-package net.merasgd.disc.provider;
+package net.merasgd.datagen.provider;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.merasgd.datagen.Provider;
 import net.merasgd.disc.Disc;
-import net.merasgd.disc.Provider;
 import net.merasgd.disc.items.ItemsRegistry;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.RegistryWrapper.WrapperLookup;

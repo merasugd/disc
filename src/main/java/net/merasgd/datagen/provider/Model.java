@@ -1,4 +1,4 @@
-package net.merasgd.disc.provider;
+package net.merasgd.datagen.provider;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;

@@ -1,10 +1,10 @@
 package net.merasgd.disc.entity;
 
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
-import net.merasgd.disc.Provider;
 import net.merasgd.disc.items.ItemsRegistry;
 import net.merasgd.disc.recipe.MusicRecorderRecipe;
 import net.merasgd.client.screen.MusicRecorderScreenHandler;
+import net.merasgd.datagen.Provider;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;

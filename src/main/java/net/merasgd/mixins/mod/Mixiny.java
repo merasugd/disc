@@ -1,4 +1,4 @@
-package net.merasgd.disc.mixin;
+package net.merasgd.mixins.mod;
 
 import net.minecraft.server.MinecraftServer;
 import org.spongepowered.asm.mixin.Mixin;
